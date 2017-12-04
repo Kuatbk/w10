@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	form{
+		display:block;
+	}
+	.div1{
+		display: flex;
+		margin:5px;	
+	}
+	.left{
+		width: 120px;
+	}
+</style>
+<body>
+	<form action="task1.php" method="Post">
+		<div class="div1">
+			<div class="left">
+				Maker & Model
+			</div>
+			<div>
+				<select value="" name="cars">
+						<option>BMW X5</option>
+						<option>Audi</option>
+						<option>bugatti</option>
+				</select>
+				
+			</div>
+		</div>
+		<div class="div1">
+			<div class="left">
+				Price
+			</div>
+			<div>
+				<input value="" type="text" name="price" required="">
+			</div>
+		</div>
+		<div class="div1">
+			<div class="left">
+				Condition
+			</div>
+			<div >
+				<label for="l1"><input type="radio"  value="New" name="condition">New</label>
+				<label for="l2"><input type="radio" value="Old" name="condition">Old</label>
+			</div>
+		</div>	
+		<div class="div1">
+				<div class="left">
+					Type
+				</div>
+				<div>
+					<select value="" name="select" required="">
+						<option>Sedan</option>
+						<option>Couple</option>
+						<option>Hatchback</option>
+					</select>
+				</div>
+			</div>
+		<div class="div1">
+			<div class="left">
+				<br>
+				Attributes
+				<br>
+			</div>
+			<div>
+				<label><input type="checkbox" required="" value="CD / DVD" name="attributes1">CD / DVD</label> <br>
+				<label><input type="checkbox"  value="Cruise control" name="attributes2">Cruise control</label><br>
+				<label><input type="checkbox"  value="Seat Heating" name="attributes3">Seat Heating</label>
+			</div>
+		</div>
+		<div class="div1">
+			<div class="left">
+				<input  type="submit">
+			</div>
+			
+		</div>
+	</form>
+
+</body>
+</html>
